@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Nový redirect</title>
+    <script src="/src/v1/script"></script>
+    <link rel="stylesheet" href="/src/v1/style">
+</head>
+<body>
+    <div class="title-container">
+        <span class="title">Vytvoř nový redirect</span>
+    </div>
+    <div class="main-container">
+        <input type="text" placeholder="Kam bude redirect výst" required id="redirect-url">
+        <p></p>
+        <input type="text" placeholder="Title" id="title">
+        <p></p>
+        <input type="text" placeholder="Popisek" id="description">
+        <p></p>
+        <input type="submit" placeholder="Vytvořit" onclick="_submit()">
+        <p style="margin-top: 80px;color: #fff3">Můžeš udělat pouze 12 odkazů za minutu!</p>
+    </div>
+    <div id="result" class="result">
+        <div class="result-content">
+            <span>
+                Super, odkaz na tvůj redirect je <span class="odkaz">https://localhost:3000/${json.code}</span>
+            </span>
+        </div>
+    </div>
+</body>
+</html>
+</html>
